@@ -1,0 +1,122 @@
+/* Estilos generales del sitio */
+body {
+    font-family: 'Albert Sans', sans-serif;
+    background-color: #FFFFFF; /* Fondo del sitio */
+    color: #0133A9; /* Textos */
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #ffffff; /* Color complementario para la barra de navegación */
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #0133A9; /* Icono del botón de navegación */
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: #0133A9; /* Color del borde del botón de navegación */
+}
+
+/* Estilos para las cards de sesión mejorados */
+.session-card {
+    background: linear-gradient(135deg, #0133A9 40%, #154673 100%);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    overflow: hidden;
+    margin: 15px; /* Agregamos margen alrededor de la card */
+}
+
+.session-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.session-card .card-body {
+    padding: 20px;
+}
+
+.session-card .card-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #d4ffde; /* Color del título */
+    transition: color 0.3s ease-out;
+}
+
+.session-card:hover .card-title {
+    color: #ffffff; /* Cambia el color del título al hacer hover */
+}
+
+.session-card .card-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.session-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.session-card ul li {
+    padding-left: 2rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.session-card ul li:before {
+    content: "\2022";
+    color: #28a745;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    transition: color 0.3s ease-out;
+}
+
+.session-card:hover ul li:before {
+    color: #28a745;
+}
+
+/* Estilo diferente para la parte superior de la card al hacer hover */
+.session-card:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px; /* Altura de la parte superior */
+    background-color: #007bff; /* Cambia el color al hacer hover */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chess-background {
+    background-image: url("img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #0133A9;
+    position: relative; /* Establece la posición relativa */
+}
+
+/* Ajustes para la imagen de curso */
+#imagen-curso {
+    z-index: 10; /* Valor alto para asegurar que esté por encima de otros elementos */
+}
+
+.col-md-6.d-flex {
+    position: relative; /* Asegura que el contenedor tenga posición relativa */
+}
+
+/* Pie de página */
+footer {
+    background-color: #427A19; /* Color complementario para el pie de página */
+    color: #fff;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+}
