@@ -1,7 +1,8 @@
 /* Estilos generales del sitio */
 body {
     font-family: 'Albert Sans', sans-serif;
-    background-color: #FFFFFF; /* Fondo del sitio */
+    background-image: url("img/fondo.png");
+    background-repeat: repeat;
     color: #0133A9; /* Textos */
 }
 
